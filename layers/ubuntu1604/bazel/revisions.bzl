@@ -21,6 +21,6 @@ BAZEL_INSTALLER = struct(
 )
 
 DEBS_TARBALL = struct(
-    revision = "1558559031",
+    revision = "1559317698",
     sha256 = "5ef40f3cbfe4375bc600b2c1e378f7c09ae830c6ea0f4909b4b9093974f704a3",
 )
