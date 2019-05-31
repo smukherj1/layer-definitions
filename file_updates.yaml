@@ -24,66 +24,66 @@
 # Bazel debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1604/bazel:bazel_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1604/bazel/debs
 
 # Clang debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1604/clang:clang_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1604/clang/debs
 
 # Docker debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1604/docker:docker_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1604/docker/debs
 
 # Gcloud debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1604/gcloud:gcloud_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1604/gcloud/debs
 
 # Python debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1604/python:python_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1604/python/debs
 
 # Python for RBE debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1604/python_rbe:python_rbe_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1604/python_rbe/debs
 
 # Java debian package tarball and java cacerts file generated when
 # installing `ca-certificates-java`.
 - triggerFile:
     target: //layers/ubuntu1604/java:java_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1604/java/debs
   extraFiles:
     - target: //layers/ubuntu1604/java:cacerts_tar/cacerts.tar
-      bucket: layer-deps
+      bucket: suvanjan-test
       dir: ubuntu1604/java/cacerts
 
 # Base RBE tools debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1604/rbe_tools:rbe_tools_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1604/rbe_tools/debs
 
 # Webtest debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1604/webtest:webtest_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1604/webtest/debs
 
 # Android test debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1604/android_test:android_test_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1604/android_test/debs
 
 # Test target that always generates an update.
@@ -101,40 +101,40 @@
 # Bazel debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1404/bazel:bazel_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1404/bazel/debs
 
 # Gcc debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1404/gcc:gcc_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1404/gcc/debs
 
 # Docker debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1404/docker:docker_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1404/docker/debs
 
 # Gcloud debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1404/gcloud:gcloud_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1404/gcloud/debs
 
 # Python debian package tarball.
 - triggerFile:
     target: //layers/ubuntu1404/python:python_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1404/python/debs
 
 # Java debian package tarball and java cacerts file generated when
 # installing `ca-certificates-java`.
 - triggerFile:
     target: //layers/ubuntu1404/java:java_debs.tar
-    bucket: layer-deps
+    bucket: suvanjan-test
     dir: ubuntu1404/java/debs
   extraFiles:
     - target: //layers/ubuntu1404/java:cacerts_tar/cacerts.tar
-      bucket: layer-deps
+      bucket: suvanjan-test
       dir: ubuntu1404/java/cacerts

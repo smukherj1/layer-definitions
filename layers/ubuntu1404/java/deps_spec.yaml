@@ -19,7 +19,7 @@ gcsDeps:
 
   # OpenJDK 11 installer.
   - name: "OPENJDK_INSTALLER"
-    bucket: "bazel-mirror"
+    bucket: suvanjan-test
     versionRegex: "11.*linux_x64-allmodules-[a-z0-9]+-\\d+"
     fileRegex: "^openjdk\\/azul-zulu11.*linux_x64-allmodules.*.tar.gz$"
     startsWith: "openjdk/azul-zulu"
@@ -30,7 +30,7 @@ gcsDeps:
 
   # OpenJDK 11 source code. (needed for licensing reason)
   - name: "OPENJDK_SRC"
-    bucket: "bazel-mirror"
+    bucket: suvanjan-test
     versionRegex: "11.*zsrc.*11\\.\\d+\\.\\d+"
     fileRegex: "^openjdk\\/azul-zulu11.*src.*.zip$"
     startsWith: "openjdk/azul-zulu"
@@ -41,7 +41,7 @@ gcsDeps:
 
   # The debian packages tarball pulled from the GCS bucket required for the Ubuntu1404 Java layer.
   - name: "DEBS_TARBALL"
-    bucket: "layer-deps"
+    bucket: suvanjan-test
     versionRegex: "\\d{8,}"
     fileRegex: "^ubuntu1404/java/debs/\\d{8,}_java_debs\\.tar$"
     startsWith: "ubuntu1404/java/debs/"
@@ -56,7 +56,7 @@ gcsDeps:
   # file is not deterministic. We commit this file in a GCS bucket and reuse in layer
   # or container creation so determinism can be achieved.
   - name: "CACERTS"
-    bucket: "layer-deps"
+    bucket: suvanjan-test
     versionRegex: "\\d{8,}"
     fileRegex: "^ubuntu1404/java/cacerts/\\d{8,}_cacerts\\.tar$"
     startsWith: "ubuntu1404/java/cacerts/"

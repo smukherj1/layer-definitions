@@ -19,7 +19,7 @@ gcsDeps:
 
   # Go installer.
   - name: "GO_INSTALLER"
-    bucket: "golang"
+    bucket: suvanjan-test
     versionRegex: "\\d+(\\.\\d+)*"
     fileRegex: "^go\\d+(\\.\\d+)*\\.linux-amd64\\.tar\\.gz\\.sha256$"
     excludes: "rc"

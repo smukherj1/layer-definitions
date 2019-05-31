@@ -19,7 +19,7 @@ gcsDeps:
 
   # The debian packages tarball pulled from the GCS bucket required for the Ubuntu1404 Gcloud layer.
   - name: "DEBS_TARBALL"
-    bucket: "layer-deps"
+    bucket: suvanjan-test
     versionRegex: "\\d{8,}"
     fileRegex: "^ubuntu1404/gcloud/debs/\\d{8,}_gcloud_debs\\.tar$"
     startsWith: "ubuntu1404/gcloud/debs/"

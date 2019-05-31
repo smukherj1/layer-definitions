@@ -19,7 +19,7 @@ gcsDeps:
 
   # The timestamp file target that will always have an update.
   - name: "TIMESTAMP"
-    bucket: "dep-update-service-test"
+    bucket: suvanjan-test
     versionRegex: "\\d{8,}"
     fileRegex: "^layer-definitions/tests/random/\\d{8,}_random_file\\.txt$"
     startsWith: "layer-definitions/tests/random/"
