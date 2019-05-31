@@ -35,3 +35,10 @@ genrule(
     outs = ["metadata.yaml"],
     cmd = "cp $(location metadata_src.yaml) $@",
 )
+
+genrule(
+    name = "py_metadata",
+    srcs = ["gen_metadata.py"],
+    outs = ["py_metadata.yaml"],
+    cmd = "python $(location gen_metadata.py) $@",
+)

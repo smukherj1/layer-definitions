@@ -26,6 +26,10 @@
     target: //layers/ubuntu1604/bazel:bazel_debs.tar
     bucket: suvanjan-test
     dir: ubuntu1604/bazel/debs
+    metadata:
+        target: //tests/layers/random:py_metadata.yaml
+        bucket: suvanjan-test
+        object: layer-definitions/ubuntu1604/bazel/metadata.yaml
 
 # Clang debian package tarball.
 - triggerFile:
@@ -89,11 +93,11 @@
 # Test target that always generates an update.
 - triggerFile:
     target: //tests/layers/random:random_file.txt
-    bucket: dep-update-service-test
+    bucket: suvanjan-test
     dir: layer-definitions/tests/random
     metadata:
         target: //tests/layers/random:metadata.yaml
-        bucket: dep-update-service-test
+        bucket: suvanjan-test
         object: layer-definitions/tests/random/metadata.yaml
 
 # ================================= Ubuntu1404 =================================
