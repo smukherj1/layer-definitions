@@ -20,7 +20,7 @@ gcsDeps:
 
   # Bazel release installer.
   - name: "BAZEL_INSTALLER"
-    bucket: suvanjan-test
+    bucket: bazel
     versionRegex: "\\d+(\\.\\d+)*"
     fileRegex: "^\\d+(\\.\\d+)*/release/bazel-\\d+(\\.\\d+)*-installer-linux-x86_64\\.sh\\.sha256$"
     excludes: "/rc"
