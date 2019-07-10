@@ -1,4 +1,4 @@
-BAZEL_INSTALLER:
+DEBS_TARBALL:
   packages:
   - name: bash-completion
     version: 1:2.1-4.2ubuntu1.1
