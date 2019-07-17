@@ -56,6 +56,12 @@ steps:
     - "-logtostderr=true"
     - "-specFile=file_updates.yaml"
 
+  # Run the dependency update spec syntax checker.
+  - name: "gcr.io/asci-toolchain/nosla-ubuntu16_04-bazel-docker-gcloud"
+    entrypoint: "bash"
+    args:
+    - "check-dep-specs.sh"
+
   - name: "gcr.io/asci-toolchain/nosla-ubuntu16_04-bazel-docker-gcloud"
     entrypoint: "bazel"
     args:
